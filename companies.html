@@ -2,11 +2,15 @@
 <html>
 <head>
 <title>Title of the document</title>
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ <script type="text/javascript" src="angular.min.js"></script>
  <script type="text/javascript" src="companies.js"></script>
 </head>
-<body ng-app="MyApp">
-The content of the document......
+<body ng-app="MyApp" ng-controller="myCtrl">
+	<ul>
+	  <li ng-repeat="data in myData">
+		{{ 1+2 }}
+	  </li>
+	</ul>
 </body>
 
 </html>
